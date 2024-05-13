@@ -4,15 +4,17 @@ using namespace std;
 class mahasiswa
 {
 public:
-    static int nimm;
+    static int nim;
     int id;
     string nama;
 
-    void setId();
+    void setID();
 
     void printAll();
     mahasiswa(string pnama):nama(pnama)
     {
-        setID;
+        setID();
     }
 };
+
+int mahasiswa::nim = 20;
